@@ -1,29 +1,24 @@
 const BLOG = {
-  title: 'CRAIGARY',
-  author: 'Craig Hart',
-  email: 'i@craigary.net',
-  link: 'https://nobelium.vercel.app',
-  description: 'This gonna be an awesome website.',
-  lang: 'en-US', // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES']
-  appearance: 'auto', // ['light', 'dark', 'auto'],
-  font: 'sans-serif', // ['sans-serif', 'serif']
-  lightBackground: '#ffffff', // use hex value, don't forget '#' e.g #fffefc
-  darkBackground: '#18181B', // use hex value, don't forget '#'
+  title: '好物good', // 标题
+  author: '我是拾块君', // 作者
+  email: 'psterman@gmail.com', // 邮箱
+  link: 'https://nobelium.vercel.app', // 链接或域名
+  description: '好物推荐', // 描述
+  lang: 'en-US', // 语言
+  appearance: 'auto', // ['light', 'dark', 'auto'],外观 (浅色, 深色或自动)
+  lightBackground: '#ffffff', // 浅色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号，如 #ffffff
+  darkBackground: '#111827', // 深色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2021, // If leave this empty, current year will be used.
+  since: 2021, // if leave this empty, current year will be used.
   postsPerPage: 7,
-  sortByDate: false,
-  showAbout: true,
-  showArchive: true,
-  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
-  ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/craigaryhart',
+  showAbout: true, // WIP
+  showArchive: true, // WIP
+  socialLink: 'https://twitter.com/restp', // 社交链接
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
   },
   notionPageId: process.env.NOTION_PAGE_ID, // DO NOT CHANGE THIS！！！
-  notionAccessToken: process.env.NOTION_ACCESS_TOKEN, // Useful if you prefer not to make your database public
   analytics: {
     provider: '', // Currently we support Google Analytics and Ackee, please fill with 'ga' or 'ackee', leave it empty to disable it.
     ackeeConfig: {
@@ -36,7 +31,7 @@ const BLOG = {
     }
   },
   comment: {
-    // support provider: gitalk, utterances, cusdis
+    // support provider: gitalk
     provider: '', // leave it empty if you don't need any comment plugin
     gitalkConfig: {
       repo: '', // The repository of store comments
@@ -45,17 +40,8 @@ const BLOG = {
       clientID: '',
       clientSecret: '',
       distractionFreeMode: false
-    },
-    utterancesConfig: {
-      repo: ''
-    },
-    cusdisConfig: {
-      appId: '', // data-app-id
-      host: 'https://cusdis.com', // data-host, change this if you're using self-hosted version
-      scriptSrc: 'https://cusdis.com/js/cusdis.es.js' // change this if you're using self-hosted version
     }
-  },
-  isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
+  }
 }
 // export default BLOG
 module.exports = BLOG
