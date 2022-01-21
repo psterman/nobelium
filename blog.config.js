@@ -1,10 +1,10 @@
 const BLOG = {
-  title: '1', // 标题
-  author: '2', // 作者
+  title: '好物good', // 标题
+  author: '拾块君', // 作者
   email: 'psterman@gmail.com', // 邮箱
   link: 'https://nobelium.vercel.app', // 链接或域名
-  description: '3', // 描述
-  lang: 'en-US', // 语言
+  description: '好物推荐', // 描述
+  lang: 'zh-CN', // 语言
   appearance: 'auto', // ['light', 'dark', 'auto'],外观 (浅色, 深色或自动)
   lightBackground: '#ffffff', // 浅色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号，如 #ffffff
   darkBackground: '#111827', // 深色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号
