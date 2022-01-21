@@ -1,15 +1,15 @@
 const BLOG = {
-  title: '好物good', // 标题
-  author: '我是拾块君', // 作者
+  title: '1', // 标题
+  author: '2', // 作者
   email: 'psterman@gmail.com', // 邮箱
   link: 'https://nobelium.vercel.app', // 链接或域名
-  description: '好物推荐', // 描述
+  description: '3', // 描述
   lang: 'en-US', // 语言
   appearance: 'auto', // ['light', 'dark', 'auto'],外观 (浅色, 深色或自动)
   lightBackground: '#ffffff', // 浅色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号，如 #ffffff
   darkBackground: '#111827', // 深色状态下的背景色，请使用十六进制颜色，不要忘记 '#' 号
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
-  since: 2021, // if leave this empty, current year will be used.
+  since: 2022, // if leave this empty, current year will be used.
   postsPerPage: 7,
   showAbout: true, // WIP
   showArchive: true, // WIP
